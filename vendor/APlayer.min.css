@@ -1,3 +1,774 @@
-.aplayer{background:#fff;font-family:Arial,Helvetica,sans-serif;margin:5px;box-shadow:0 2px 2px 0 rgba(0,0,0,.07),0 1px 5px 0 rgba(0,0,0,.1);border-radius:2px;overflow:hidden;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;line-height:normal;position:relative}.aplayer *{box-sizing:content-box}.aplayer svg{width:100%;height:100%}.aplayer svg circle,.aplayer svg path{fill:#fff}.aplayer.aplayer-withlist .aplayer-info{border-bottom:1px solid #e9e9e9}.aplayer.aplayer-withlist .aplayer-list{display:block}.aplayer.aplayer-withlist .aplayer-icon-order,.aplayer.aplayer-withlist .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon.aplayer-icon-menu{display:inline}.aplayer.aplayer-withlrc .aplayer-pic{height:90px;width:90px}.aplayer.aplayer-withlrc .aplayer-info{margin-left:90px;height:90px;padding:10px 7px 0}.aplayer.aplayer-withlrc .aplayer-lrc{display:block}.aplayer.aplayer-narrow{width:66px}.aplayer.aplayer-narrow .aplayer-info,.aplayer.aplayer-narrow .aplayer-list{display:none}.aplayer.aplayer-narrow .aplayer-body,.aplayer.aplayer-narrow .aplayer-pic{height:66px;width:66px}.aplayer.aplayer-fixed{position:fixed;bottom:0;left:0;right:0;margin:0;z-index:99;overflow:visible;max-width:400px;box-shadow:none}.aplayer.aplayer-fixed .aplayer-list{margin-bottom:65px;border:1px solid #eee;border-bottom:none}.aplayer.aplayer-fixed .aplayer-body{position:fixed;bottom:0;left:0;right:0;margin:0;z-index:99;background:#fff;padding-right:18px;transition:all .3s ease;max-width:400px}.aplayer.aplayer-fixed .aplayer-lrc{display:block;position:fixed;bottom:10px;left:0;right:0;margin:0;z-index:98;pointer-events:none;text-shadow:-1px -1px 0 #fff}.aplayer.aplayer-fixed .aplayer-lrc:after,.aplayer.aplayer-fixed .aplayer-lrc:before{display:none}.aplayer.aplayer-fixed .aplayer-info{-webkit-transform:scaleX(1);transform:scaleX(1);-webkit-transform-origin:0 0;transform-origin:0 0;transition:all .3s ease;border-bottom:none;border-top:1px solid #e9e9e9}.aplayer.aplayer-fixed .aplayer-info .aplayer-music{width:calc(100% - 105px)}.aplayer.aplayer-fixed .aplayer-miniswitcher{display:block}.aplayer.aplayer-fixed.aplayer-narrow .aplayer-info{display:block;-webkit-transform:scaleX(0);transform:scaleX(0)}.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body{width:66px!important}.aplayer.aplayer-fixed.aplayer-narrow .aplayer-miniswitcher .aplayer-icon{-webkit-transform:rotateY(0);transform:rotateY(0)}.aplayer.aplayer-fixed .aplayer-icon-back,.aplayer.aplayer-fixed .aplayer-icon-forward,.aplayer.aplayer-fixed .aplayer-icon-lrc,.aplayer.aplayer-fixed .aplayer-icon-play{display:inline-block}.aplayer.aplayer-fixed .aplayer-icon-back,.aplayer.aplayer-fixed .aplayer-icon-forward,.aplayer.aplayer-fixed .aplayer-icon-menu,.aplayer.aplayer-fixed .aplayer-icon-play{position:absolute;bottom:27px;width:20px;height:20px}.aplayer.aplayer-fixed .aplayer-icon-back{right:75px}.aplayer.aplayer-fixed .aplayer-icon-play{right:50px}.aplayer.aplayer-fixed .aplayer-icon-forward{right:25px}.aplayer.aplayer-fixed .aplayer-icon-menu{right:0}.aplayer.aplayer-arrow .aplayer-icon-loop,.aplayer.aplayer-arrow .aplayer-icon-order,.aplayer.aplayer-mobile .aplayer-icon-volume-down{display:none}.aplayer.aplayer-loading .aplayer-info .aplayer-controller .aplayer-loading-icon{display:block}.aplayer.aplayer-loading .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-played .aplayer-thumb{-webkit-transform:scale(1);transform:scale(1)}.aplayer .aplayer-body{position:relative}.aplayer .aplayer-icon{width:15px;height:15px;border:none;background-color:transparent;outline:none;cursor:pointer;opacity:.8;vertical-align:middle;padding:0;font-size:12px;margin:0;display:inline-block}.aplayer .aplayer-icon path{transition:all .2s ease-in-out}.aplayer .aplayer-icon-back,.aplayer .aplayer-icon-forward,.aplayer .aplayer-icon-lrc,.aplayer .aplayer-icon-order,.aplayer .aplayer-icon-play{display:none}.aplayer .aplayer-icon-lrc-inactivity svg{opacity:.4}.aplayer .aplayer-icon-forward{-webkit-transform:rotate(180deg);transform:rotate(180deg)}.aplayer .aplayer-lrc-content{display:none}.aplayer .aplayer-pic{position:relative;float:left;height:66px;width:66px;background-size:cover;background-position:50%;transition:all .3s ease;cursor:pointer}.aplayer .aplayer-pic:hover .aplayer-button{opacity:1}.aplayer .aplayer-pic .aplayer-button{position:absolute;border-radius:50%;opacity:.8;text-shadow:0 1px 1px rgba(0,0,0,.2);box-shadow:0 1px 1px rgba(0,0,0,.2);background:rgba(0,0,0,.2);transition:all .1s ease}.aplayer .aplayer-pic .aplayer-button path{fill:#fff}.aplayer .aplayer-pic .aplayer-hide{display:none}.aplayer .aplayer-pic .aplayer-play{width:26px;height:26px;border:2px solid #fff;bottom:50%;right:50%;margin:0 -15px -15px 0}.aplayer .aplayer-pic .aplayer-play svg{position:absolute;top:3px;left:4px;height:20px;width:20px}.aplayer .aplayer-pic .aplayer-pause{width:16px;height:16px;border:2px solid #fff;bottom:4px;right:4px}.aplayer .aplayer-pic .aplayer-pause svg{position:absolute;top:2px;left:2px;height:12px;width:12px}.aplayer .aplayer-info{margin-left:66px;padding:14px 7px 0 10px;height:66px;box-sizing:border-box}.aplayer .aplayer-info .aplayer-music{overflow:hidden;white-space:nowrap;text-overflow:ellipsis;margin:0 0 13px 5px;-webkit-user-select:text;-moz-user-select:text;-ms-user-select:text;user-select:text;cursor:default;padding-bottom:2px;height:20px}.aplayer .aplayer-info .aplayer-music .aplayer-title{font-size:14px}.aplayer .aplayer-info .aplayer-music .aplayer-author{font-size:12px;color:#666}.aplayer .aplayer-info .aplayer-controller{position:relative;display:flex}.aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap{margin:0 0 0 5px;padding:4px 0;cursor:pointer!important;flex:1}.aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap:hover .aplayer-bar .aplayer-played .aplayer-thumb{-webkit-transform:scale(1);transform:scale(1)}.aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar{position:relative;height:2px;width:100%;background:#cdcdcd}.aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-loaded{position:absolute;left:0;top:0;bottom:0;background:#aaa;height:2px;transition:all .5s ease}.aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-played{position:absolute;left:0;top:0;bottom:0;height:2px}.aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-played .aplayer-thumb{position:absolute;top:0;right:5px;margin-top:-4px;margin-right:-10px;height:10px;width:10px;border-radius:50%;cursor:pointer;transition:all .3s ease-in-out;-webkit-transform:scale(0);transform:scale(0)}.aplayer .aplayer-info .aplayer-controller .aplayer-time{position:relative;right:0;bottom:4px;height:17px;color:#999;font-size:11px;padding-left:7px}.aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-time-inner{vertical-align:middle}.aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon{cursor:pointer;transition:all .2s ease}.aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon path{fill:#666}.aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon.aplayer-icon-loop{margin-right:2px}.aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon:hover path{fill:#000}.aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon.aplayer-icon-menu,.aplayer .aplayer-info .aplayer-controller .aplayer-time.aplayer-time-narrow .aplayer-icon-menu,.aplayer .aplayer-info .aplayer-controller .aplayer-time.aplayer-time-narrow .aplayer-icon-mode{display:none}.aplayer .aplayer-info .aplayer-controller .aplayer-volume-wrap{position:relative;display:inline-block;margin-left:3px;cursor:pointer!important}.aplayer .aplayer-info .aplayer-controller .aplayer-volume-wrap:hover .aplayer-volume-bar-wrap{height:40px}.aplayer .aplayer-info .aplayer-controller .aplayer-volume-wrap .aplayer-volume-bar-wrap{position:absolute;bottom:15px;right:-3px;width:25px;height:0;z-index:99;overflow:hidden;transition:all .2s ease-in-out}.aplayer .aplayer-info .aplayer-controller .aplayer-volume-wrap .aplayer-volume-bar-wrap.aplayer-volume-bar-wrap-active{height:40px}.aplayer .aplayer-info .aplayer-controller .aplayer-volume-wrap .aplayer-volume-bar-wrap .aplayer-volume-bar{position:absolute;bottom:0;right:10px;width:5px;height:35px;background:#aaa;border-radius:2.5px;overflow:hidden}.aplayer .aplayer-info .aplayer-controller .aplayer-volume-wrap .aplayer-volume-bar-wrap .aplayer-volume-bar .aplayer-volume{position:absolute;bottom:0;right:0;width:5px;transition:all .1s ease}.aplayer .aplayer-info .aplayer-controller .aplayer-loading-icon{display:none}.aplayer .aplayer-info .aplayer-controller .aplayer-loading-icon svg{position:absolute;-webkit-animation:rotate 1s linear infinite;animation:rotate 1s linear infinite}.aplayer .aplayer-lrc{display:none;position:relative;height:30px;text-align:center;overflow:hidden;margin:-10px 0 7px}.aplayer .aplayer-lrc:before{top:0;height:10%;background:linear-gradient(180deg,#fff 0,hsla(0,0%,100%,0));filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#00ffffff",GradientType=0)}.aplayer .aplayer-lrc:after,.aplayer .aplayer-lrc:before{position:absolute;z-index:1;display:block;overflow:hidden;width:100%;content:" "}.aplayer .aplayer-lrc:after{bottom:0;height:33%;background:linear-gradient(180deg,hsla(0,0%,100%,0) 0,hsla(0,0%,100%,.8));filter:progid:DXImageTransform.Microsoft.gradient(startColorstr="#00ffffff",endColorstr="#ccffffff",GradientType=0)}.aplayer .aplayer-lrc p{font-size:12px;color:#666;line-height:16px!important;height:16px!important;padding:0!important;margin:0!important;transition:all .5s ease-out;opacity:.4;overflow:hidden}.aplayer .aplayer-lrc p.aplayer-lrc-current{opacity:1;overflow:visible;height:auto!important;min-height:16px}.aplayer .aplayer-lrc.aplayer-lrc-hide{display:none}.aplayer .aplayer-lrc .aplayer-lrc-contents{width:100%;transition:all .5s ease-out;-webkit-user-select:text;-moz-user-select:text;-ms-user-select:text;user-select:text;cursor:default}.aplayer .aplayer-list{overflow:auto;transition:all .5s ease;will-change:height;display:none;overflow:hidden}.aplayer .aplayer-list.aplayer-list-hide{max-height:0!important}.aplayer .aplayer-list ol{list-style-type:none;margin:0;padding:0;overflow-y:auto}.aplayer .aplayer-list ol::-webkit-scrollbar{width:5px}.aplayer .aplayer-list ol::-webkit-scrollbar-thumb{border-radius:3px;background-color:#eee}.aplayer .aplayer-list ol::-webkit-scrollbar-thumb:hover{background-color:#ccc}.aplayer .aplayer-list ol li{position:relative;height:32px;line-height:32px;padding:0 15px;font-size:12px;border-top:1px solid #e9e9e9;cursor:pointer;transition:all .2s ease;overflow:hidden;margin:0}.aplayer .aplayer-list ol li:first-child{border-top:none}.aplayer .aplayer-list ol li:hover{background:#efefef}.aplayer .aplayer-list ol li.aplayer-list-light{background:#e9e9e9}.aplayer .aplayer-list ol li.aplayer-list-light .aplayer-list-cur{display:inline-block}.aplayer .aplayer-list ol li .aplayer-list-cur{display:none;width:3px;height:22px;position:absolute;left:0;top:5px;cursor:pointer}.aplayer .aplayer-list ol li .aplayer-list-index{color:#666;margin-right:12px;cursor:pointer}.aplayer .aplayer-list ol li .aplayer-list-author{color:#666;float:right;cursor:pointer}.aplayer .aplayer-notice{opacity:0;position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);font-size:12px;border-radius:4px;padding:5px 10px;transition:all .3s ease-in-out;overflow:hidden;color:#fff;pointer-events:none;background-color:#f4f4f5;color:#909399}.aplayer .aplayer-miniswitcher{display:none;position:absolute;top:0;right:0;bottom:0;height:100%;background:#e6e6e6;width:18px;border-radius:0 2px 2px 0}.aplayer .aplayer-miniswitcher .aplayer-icon{height:100%;width:100%;-webkit-transform:rotateY(180deg);transform:rotateY(180deg);transition:all .3s ease}.aplayer .aplayer-miniswitcher .aplayer-icon path{fill:#666}.aplayer .aplayer-miniswitcher .aplayer-icon:hover path{fill:#000}@-webkit-keyframes aplayer-roll{0%{left:0}to{left:-100%}}@keyframes aplayer-roll{0%{left:0}to{left:-100%}}@-webkit-keyframes rotate{0%{-webkit-transform:rotate(0);transform:rotate(0)}to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}@keyframes rotate{0%{-webkit-transform:rotate(0);transform:rotate(0)}to{-webkit-transform:rotate(1turn);transform:rotate(1turn)}}
+/* ==========================================================================
+   APlayer v1.10.1 —— 原样格式化版
+   说明：仅调整排版并添加注释，未改动任何声明与取值
+   ========================================================================== */
+
+/* ======================= 一、基础容器 ======================= */
+
+.aplayer {
+  background: #fff;                                       /* 播放器主体背景色 */
+  font-family: Arial, Helvetica, sans-serif;              /* 字体族 */
+  margin: 5px;                                            /* 外边距（非 fixed 模式下生效） */
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .07),             /* 悬浮阴影：近景 */
+              0 1px 5px 0 rgba(0, 0, 0, .1);              /* 悬浮阴影：远景扩散 */
+  border-radius: 2px;                                     /* 圆角 */
+  overflow: hidden;                                       /* 裁掉超出部分（fixed 模式会覆盖为 visible） */
+  -webkit-user-select: none;                              /* 禁止选中：WebKit */
+  -moz-user-select: none;                                 /* 禁止选中：Firefox */
+  -ms-user-select: none;                                  /* 禁止选中：IE/Edge */
+  user-select: none;                                      /* 禁止选中：标准 */
+  line-height: normal;                                    /* 重置行高，避免继承站点样式 */
+  position: relative                                   /* 作为内部绝对定位元素的参照物 */
+}
+
+.aplayer * {
+  box-sizing: content-box                                  /* 统一盒模型：宽高不含内边距和边框 */
+}
+
+.aplayer svg {
+  width: 100%;                                            /* SVG 撑满父容器 */
+  height: 100%
+}
+
+.aplayer svg circle,
+.aplayer svg path {
+  fill: #fff                                              /* 图标填充色：默认白色（深色底上可直接用） */
+}
+
+/* ======================= 二、状态类：withlist / withlrc ======================= */
+
+.aplayer.aplayer-withlist .aplayer-info {
+  border-bottom: 1px solid #e9e9e9                         /* 有播放列表时，信息区底部加分割线 */
+}
+
+.aplayer.aplayer-withlist .aplayer-list {
+  display: block                                          /* 有列表时显示列表容器 */
+}
+
+.aplayer.aplayer-withlist .aplayer-icon-order,
+.aplayer.aplayer-withlist .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon.aplayer-icon-menu {
+  display: inline                                         /* 有列表时放出"顺序"和"菜单"图标 */
+}
+
+.aplayer.aplayer-withlrc .aplayer-pic {
+  height: 90px;                                           /* 有歌词时封面放大到 90px */
+  width: 90px
+}
+
+.aplayer.aplayer-withlrc .aplayer-info {
+  margin-left: 90px;                                      /* 信息区让出封面的宽度 */
+  height: 90px;                                           /* 与封面同高 */
+  padding: 10px 7px 0                                     /* 上右下左：上方留 10px */
+}
+
+.aplayer.aplayer-withlrc .aplayer-lrc {
+  display: block                                          /* 有歌词时显示歌词容器 */
+}
+
+/* ======================= 三、状态类：narrow（迷你模式） ======================= */
+
+.aplayer.aplayer-narrow {
+  width: 66px                                             /* 窄模式：宽度收成封面大小 */
+}
+
+.aplayer.aplayer-narrow .aplayer-info,
+.aplayer.aplayer-narrow .aplayer-list {
+  display: none                                           /* 窄模式：隐藏信息区与列表 */
+}
+
+.aplayer.aplayer-narrow .aplayer-body,
+.aplayer.aplayer-narrow .aplayer-pic {
+  height: 66px;                                           /* 窄模式：主体与封面统一 66px */
+  width: 66px
+}
+
+/* ======================= 四、状态类：fixed（吸底模式） ======================= */
+
+.aplayer.aplayer-fixed {
+  position: fixed;                                        /* 固定定位，吸附在视口底部 */
+  bottom: 0;                                              /* 贴底 */
+  left: 0;                                                /* 左边贴齐 */
+  right: 0;                                               /* 右边贴齐 */
+  margin: 0;                                              /* 固定定位下取消外边距 */
+  z-index: 99;                                            /* 层级：压在普通内容之上 */
+  overflow: visible;                                      /* 覆盖基础容器的 hidden，让弹出的列表/歌词可见 */
+  max-width: 400px;                                       /* 最宽 400px，避免大屏拉太长 */
+  box-shadow: none                                        /* 贴底时不加阴影 */
+}
+
+.aplayer.aplayer-fixed .aplayer-list {
+  margin-bottom: 65px;                                    /* 列表底部留出播放条的高度 */
+  border: 1px solid #eee;                                 /* 列表描边 */
+  border-bottom: none                                     /* 底边不画，与播放条衔接 */
+}
+
+.aplayer.aplayer-fixed .aplayer-body {
+  position: fixed;                                        /* 主体也固定定位 */
+  bottom: 0;                                              /* 贴底 */
+  left: 0;                                                /* 左贴齐 */
+  right: 0;                                               /* 右贴齐 */
+  margin: 0;                                              /* 取消外边距 */
+  z-index: 99;                                            /* 与容器同层级 */
+  background: #fff;                                       /* 吸底条自身背景（不透明，遮住下方内容） */
+  padding-right: 18px;                                    /* 右侧留出迷你切换条的宽度 */
+  transition: all .3s ease;                               /* 所有属性 0.3s 缓动（展开/收起动画） */
+  max-width: 400px                                        /* 与容器一致的最大宽度 */
+}
+
+.aplayer.aplayer-fixed .aplayer-lrc {
+  display: block;                                         /* 固定模式强制显示歌词 */
+  position: fixed;                                        /* 歌词独立固定定位 */
+  bottom: 10px;                                           /* 距底 10px */
+  left: 0;                                                /* 左贴齐 */
+  right: 0;                                               /* 右贴齐 */
+  margin: 0;                                              /* 取消外边距 */
+  z-index: 98;                                            /* 比播放条低一层，避免遮住控制键 */
+  pointer-events: none;                                   /* 歌词不拦截鼠标事件 */
+  text-shadow: -1px -1px 0 #fff                           /* 白色描边，保证歌词在任何背景上都可读 */
+}
+
+.aplayer.aplayer-fixed .aplayer-lrc:after,
+.aplayer.aplayer-fixed .aplayer-lrc:before {
+  display: none                                           /* 固定模式不需要歌词上下渐隐遮罩 */
+}
+
+.aplayer.aplayer-fixed .aplayer-info {
+  -webkit-transform: scaleX(1);                           /* 横向缩放 1：为收起动画预留，WebKit */
+  transform: scaleX(1);                                   /* 横向缩放 1：为收起动画预留 */
+  -webkit-transform-origin: 0 0;                          /* 缩放基准点：左上角，WebKit */
+  transform-origin: 0 0;                                  /* 缩放基准点：左上角 */
+  transition: all .3s ease;                               /* 缩放过渡动画 */
+  border-bottom: none;                                    /* 去掉列表模式的下边框 */
+  border-top: 1px solid #e9e9e9                            /* 改为上边框，与列表分隔 */
+}
+
+.aplayer.aplayer-fixed .aplayer-info .aplayer-music {
+  width: calc(100% - 105px)                               /* 歌名区让出右侧控制键的宽度 */
+}
+
+.aplayer.aplayer-fixed .aplayer-miniswitcher {
+  display: block                                          /* 固定模式才显示迷你切换条 */
+}
+
+.aplayer.aplayer-fixed.aplayer-narrow .aplayer-info {
+  display: block;                                         /* 窄模式下信息区仍占位（不 display:none） */
+  -webkit-transform: scaleX(0);                           /* 横向压扁为 0，视觉上隐藏，WebKit */
+  transform: scaleX(0)                                    /* 横向压扁为 0，视觉上隐藏 */
+}
+
+.aplayer.aplayer-fixed.aplayer-narrow .aplayer-body {
+  width: 66px !important                                  /* 窄模式主体宽度强制 66px */
+}
+
+.aplayer.aplayer-fixed.aplayer-narrow .aplayer-miniswitcher .aplayer-icon {
+  -webkit-transform: rotateY(0);                          /* 窄模式下箭头翻回正向，WebKit */
+  transform: rotateY(0)                                   /* 窄模式下箭头翻回正向 */
+}
+
+/* ---------- fixed 模式下的控制键显示与定位 ---------- */
+
+.aplayer.aplayer-fixed .aplayer-icon-back,
+.aplayer.aplayer-fixed .aplayer-icon-forward,
+.aplayer.aplayer-fixed .aplayer-icon-lrc,
+.aplayer.aplayer-fixed .aplayer-icon-play {
+  display: inline-block                                   /* 固定模式放出上一首/下一首/歌词/播放键 */
+}
+
+.aplayer.aplayer-fixed .aplayer-icon-back,
+.aplayer.aplayer-fixed .aplayer-icon-forward,
+.aplayer.aplayer-fixed .aplayer-icon-menu,
+.aplayer.aplayer-fixed .aplayer-icon-play {
+  position: absolute;                                     /* 这几颗键改为绝对定位（贴着播放条右下角排布） */
+  bottom: 27px;                                           /* 距底 27px */
+  width: 20px;                                            /* 宽 20px */
+  height: 20px                                            /* 高 20px */
+}
+
+.aplayer.aplayer-fixed .aplayer-icon-back {
+  right: 75px                                             /* 上一首：距右 75px */
+}
+
+.aplayer.aplayer-fixed .aplayer-icon-play {
+  right: 50px                                             /* 播放/暂停：距右 50px */
+}
+
+.aplayer.aplayer-fixed .aplayer-icon-forward {
+  right: 25px                                             /* 下一首：距右 25px */
+}
+
+.aplayer.aplayer-fixed .aplayer-icon-menu {
+  right: 0                                                /* 列表菜单：距右 0，最外侧 */
+}
+
+/* ======================= 五、状态类：arrow / mobile / loading ======================= */
+
+.aplayer.aplayer-arrow .aplayer-icon-loop,
+.aplayer.aplayer-arrow .aplayer-icon-order,
+.aplayer.aplayer-mobile .aplayer-icon-volume-down {
+  display: none                                           /* 窄屏/移动端隐藏循环、顺序、音量图标 */
+}
+
+.aplayer.aplayer-loading .aplayer-info .aplayer-controller .aplayer-loading-icon {
+  display: block                                          /* 加载中显示旋转 loading 图标 */
+}
+
+.aplayer.aplayer-loading .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-played .aplayer-thumb {
+  -webkit-transform: scale(1);                            /* 加载中让进度滑块常显，WebKit */
+  transform: scale(1)                                     /* 加载中让进度滑块常显 */
+}
+
+/* ======================= 六、主体结构 ======================= */
+
+.aplayer .aplayer-body {
+  position: relative                                      /* 作为内部绝对定位元素的参照物 */
+}
+
+/* ---------- 控制图标 ---------- */
+
+.aplayer .aplayer-icon {
+  width: 15px;                                            /* 图标宽 */
+  height: 15px;                                           /* 图标高 */
+  border: none;                                           /* 无边框 */
+  background-color: transparent;                          /* 透明背景 */
+  outline: none;                                          /* 去掉聚焦描边 */
+  cursor: pointer;                                        /* 手型光标 */
+  opacity: .8;                                            /* 默认 80% 不透明度 */
+  vertical-align: middle;                                 /* 垂直居中对齐 */
+  padding: 0;                                             /* 无内边距 */
+  font-size: 12px;                                        /* 字号 */
+  margin: 0;                                              /* 无外边距 */
+  display: inline-block                                   /* 行内块，方便设宽高 */
+}
+
+.aplayer .aplayer-icon path {
+  transition: all .2s ease-in-out                          /* 图标颜色/形状变化时的过渡 */
+}
+
+.aplayer .aplayer-icon-back,
+.aplayer .aplayer-icon-forward,
+.aplayer .aplayer-icon-lrc,
+.aplayer .aplayer-icon-order,
+.aplayer .aplayer-icon-play {
+  display: none                                           /* 非 fixed 模式下这几颗键默认隐藏 */
+}
+
+.aplayer .aplayer-icon-lrc-inactivity svg {
+  opacity: .4                                             /* 歌词关闭状态：图标变淡表示未启用 */
+}
+
+.aplayer .aplayer-icon-forward {
+  -webkit-transform: rotate(180deg);                      /* 下一首图标水平翻转，WebKit */
+  transform: rotate(180deg)                               /* 下一首图标水平翻转 */
+}
+
+.aplayer .aplayer-lrc-content {
+  display: none                                           /* 内嵌的 HTML 歌词源内容不显示 */
+}
+
+/* ---------- 封面与播放键 ---------- */
+
+.aplayer .aplayer-pic {
+  position: relative;                                     /* 作为播放键的定位参照 */
+  float: left;                                            /* 左浮动，信息区靠 margin-left 让位 */
+  height: 66px;                                           /* 封面高 */
+  width: 66px;                                            /* 封面宽 */
+  background-size: cover;                                 /* 封面图等比铺满并裁切 */
+  background-position: 50%;                               /* 封面图居中（水平垂直各 50%） */
+  transition: all .3s ease;                               /* 尺寸变化时的过渡 */
+  cursor: pointer                                         /* 点击封面可播放/暂停 */
+}
+
+.aplayer .aplayer-pic:hover .aplayer-button {
+  opacity: 1                                              /* 悬停封面时播放键变为完全不透明 */
+}
+
+.aplayer .aplayer-pic .aplayer-button {
+  position: absolute;                                     /* 绝对定位在封面上 */
+  border-radius: 50%;                                     /* 圆形按钮 */
+  opacity: .8;                                            /* 默认 80% 不透明度 */
+  text-shadow: 0 1px 1px rgba(0, 0, 0, .2);               /* 文字投影，增强可读性 */
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .2);                /* 按钮投影，与封面分离 */
+  background: rgba(0, 0, 0, .2);                          /* 半透明黑底，压在封面上仍能看清 */
+  transition: all .1s ease                                /* 状态切换的快速过渡 */
+}
+
+.aplayer .aplayer-pic .aplayer-button path {
+  fill: #fff                                              /* 播放/暂停三角与双竖线：白色 */
+}
+
+.aplayer .aplayer-pic .aplayer-hide {
+  display: none                                           /* 通用隐藏工具类 */
+}
+
+.aplayer .aplayer-pic .aplayer-play {
+  width: 26px;                                            /* 播放键直径：内容区 */
+  height: 26px;                                           /* 播放键直径：内容区 */
+  border: 2px solid #fff;                                 /* 白色描边（总尺寸 30px） */
+  bottom: 50%;                                            /* 垂直居中起点 */
+  right: 50%;                                             /* 水平居中起点 */
+  margin: 0 -15px -15px 0                                 /* 负边距抵消自身尺寸，实现正中央 */
+}
+
+.aplayer .aplayer-pic .aplayer-play svg {
+  position: absolute;                                     /* SVG 绝对定位在按钮内 */
+  top: 3px;                                               /* 上偏移 */
+  left: 4px;                                              /* 左偏移（三角形视觉居中） */
+  height: 20px;                                           /* SVG 高 */
+  width: 20px                                             /* SVG 宽 */
+}
+
+.aplayer .aplayer-pic .aplayer-pause {
+  width: 16px;                                            /* 暂停键尺寸（比播放键小） */
+  height: 16px;                                           /* 暂停键尺寸 */
+  border: 2px solid #fff;                                 /* 白色描边 */
+  bottom: 4px;                                            /* 贴在封面右下角 */
+  right: 4px                                              /* 贴在封面右下角 */
+}
+
+.aplayer .aplayer-pic .aplayer-pause svg {
+  position: absolute;                                     /* SVG 绝对定位在按钮内 */
+  top: 2px;                                               /* 上偏移 */
+  left: 2px;                                              /* 左偏移 */
+  height: 12px;                                           /* SVG 高 */
+  width: 12px                                             /* SVG 宽 */
+}
+
+/* ---------- 信息区 ---------- */
+
+.aplayer .aplayer-info {
+  margin-left: 66px;                                      /* 让出封面的宽度 */
+  padding: 14px 7px 0 10px;                               /* 上 右 下 左 */
+  height: 66px;                                           /* 与封面等高 */
+  box-sizing: border-box                                  /* 涵盖内边距，方便按 66px 精确布局 */
+}
+
+.aplayer .aplayer-info .aplayer-music {
+  overflow: hidden;                                       /* 超出裁切，配合省略号 */
+  white-space: nowrap;                                    /* 不换行 */
+  text-overflow: ellipsis;                                /* 超长歌名显示省略号 */
+  margin: 0 0 13px 5px;                                   /* 底 13px 留白，与进度条分开 */
+  -webkit-user-select: text;                              /* 歌名允许选中复制，WebKit */
+  -moz-user-select: text;                                 /* 歌名允许选中复制，Firefox */
+  -ms-user-select: text;                                  /* 歌名允许选中复制，IE/Edge */
+  user-select: text;                                      /* 歌名允许选中复制 */
+  cursor: default;                                        /* 默认光标 */
+  padding-bottom: 2px;                                    /* 底部内边距，防省略号被裁 */
+  height: 20px                                            /* 固定高度，单行显示 */
+}
+
+.aplayer .aplayer-info .aplayer-music .aplayer-title {
+  font-size: 14px                                         /* 歌名字号 */
+}
+
+.aplayer .aplayer-info .aplayer-music .aplayer-author {
+  font-size: 12px;                                        /* 歌手字号（比歌名小） */
+  color: #666                                             /* 歌手颜色：次要文字灰 */
+}
+
+/* ======================= 七、进度条 ======================= */
+
+.aplayer .aplayer-info .aplayer-controller {
+  position: relative;                                     /* 作为音量条的定位参照 */
+  display: flex                                          /* 弹性布局：进度条 + 时间 + 图标一行排列 */
+}
+
+.aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap {
+  margin: 0 0 0 5px;                                      /* 左侧留 5px 与歌名对齐 */
+  padding: 4px 0;                                         /* 上下各 4px，扩大点击热区 */
+  cursor: pointer !important;                             /* 强制手型光标（覆盖父级） */
+  flex: 1                                                 /* 占据剩余全部宽度 */
+}
+
+.aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap:hover .aplayer-bar .aplayer-played .aplayer-thumb {
+  -webkit-transform: scale(1);                            /* 悬停进度条时滑块放大显示，WebKit */
+  transform: scale(1)                                     /* 悬停进度条时滑块放大显示 */
+}
+
+.aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar {
+  position: relative;                                     /* 作为已播/缓冲/滑块的定位参照 */
+  height: 2px;                                            /* 进度条高度：2px 细线 */
+  width: 100%;                                            /* 撑满容器 */
+  background: #cdcdcd                                     /* 进度条底槽颜色 */
+}
+
+.aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-loaded {
+  position: absolute;                                     /* 绝对定位叠在底槽上 */
+  left: 0;                                                /* 从最左开始 */
+  top: 0;                                                 /* 顶部对齐 */
+  bottom: 0;                                              /* 底部对齐 */
+  background: #aaa;                                       /* 已缓冲段颜色 */
+  height: 2px;                                            /* 高度与底槽一致 */
+  transition: all .5s ease                                /* 缓冲进度平滑推进 */
+}
+
+.aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-played {
+  position: absolute;                                     /* 绝对定位叠在底槽上 */
+  left: 0;                                                /* 从最左开始 */
+  top: 0;                                                 /* 顶部对齐 */
+  bottom: 0;                                              /* 底部对齐 */
+  height: 2px                                             /* 高度与底槽一致（颜色由 JS 按 theme 内联写入） */
+}
+
+.aplayer .aplayer-info .aplayer-controller .aplayer-bar-wrap .aplayer-bar .aplayer-played .aplayer-thumb {
+  position: absolute;                                     /* 绝对定位，跟随已播进度移动 */
+  top: 0;                                                 /* 与进度条顶部对齐 */
+  right: 5px;                                             /* 相对已播段右端内缩 5px */
+  margin-top: -4px;                                       /* 上移 4px，使 10px 圆形在 2px 线条上居中 */
+  margin-right: -10px;                                    /* 右移半个滑块宽度，圆心落在端点 */
+  height: 10px;                                           /* 滑块直径 */
+  width: 10px;                                            /* 滑块直径 */
+  border-radius: 50%;                                     /* 圆形滑块 */
+  cursor: pointer;                                        /* 手型光标，提示可拖动 */
+  transition: all .3s ease-in-out;                        /* 显隐与位移的过渡 */
+  -webkit-transform: scale(0);                            /* 默认缩为 0（隐藏），hover 时放大，WebKit */
+  transform: scale(0)                                     /* 默认缩为 0（隐藏），hover 时放大 */
+}
+
+/* ---------- 时间与控制图标区 ---------- */
+
+.aplayer .aplayer-info .aplayer-controller .aplayer-time {
+  position: relative;                                     /* 作为内部图标的定位参照 */
+  right: 0;                                               /* 右偏移基准 */
+  bottom: 4px;                                            /* 上移 4px，与进度条视觉居中对齐 */
+  height: 17px;                                           /* 固定高度 */
+  color: #999;                                            /* 时间文字：弱化灰 */
+  font-size: 11px;                                        /* 时间字号 */
+  padding-left: 7px                                       /* 左侧留白，与进度条分开 */
+}
+
+.aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-time-inner {
+  vertical-align: middle                                  /* 时间文本垂直居中 */
+}
+
+.aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon {
+  cursor: pointer;                                        /* 手型光标 */
+  transition: all .2s ease                                /* 状态变化的过渡 */
+}
+
+.aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon path {
+  fill: #666                                              /* 时间区图标填充色：深灰 */
+}
+
+.aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon.aplayer-icon-loop {
+  margin-right: 2px                                       /* 循环图标右侧微调间距 */
+}
+
+.aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon:hover path {
+  fill: #000                                              /* 图标悬停变纯黑 */
+}
+
+.aplayer .aplayer-info .aplayer-controller .aplayer-time .aplayer-icon.aplayer-icon-menu,
+.aplayer .aplayer-info .aplayer-controller .aplayer-time.aplayer-time-narrow .aplayer-icon-menu,
+.aplayer .aplayer-info .aplayer-controller .aplayer-time.aplayer-time-narrow .aplayer-icon-mode {
+  display: none                                           /* 空间不足时隐藏菜单与模式图标 */
+}
+
+/* ======================= 八、音量条 ======================= */
+
+.aplayer .aplayer-info .aplayer-controller .aplayer-volume-wrap {
+  position: relative;                                     /* 作为弹出音量条的定位参照 */
+  display: inline-block;                                  /* 行内块，与图标排在一行 */
+  margin-left: 3px;                                       /* 与左侧图标保持 3px 间距 */
+  cursor: pointer !important                              /* 强制手型光标 */
+}
+
+.aplayer .aplayer-info .aplayer-controller .aplayer-volume-wrap:hover .aplayer-volume-bar-wrap {
+  height: 40px                                            /* 悬停时弹出竖直音量条 */
+}
+
+.aplayer .aplayer-info .aplayer-controller .aplayer-volume-wrap .aplayer-volume-bar-wrap {
+  position: absolute;                                     /* 绝对定位，浮在图标上方 */
+  bottom: 15px;                                           /* 距按钮底部 15px，避免遮挡图标 */
+  right: -3px;                                            /* 右侧微调，使竖条与图标居中对齐 */
+  width: 25px;                                            /* 宽度（容纳 5px 竖条 + 边距） */
+  height: 0;                                              /* 默认高度 0 = 收起 */
+  z-index: 99;                                            /* 层级高于内容 */
+  overflow: hidden;                                       /* 收起时裁掉内部竖条 */
+  transition: all .2s ease-in-out                          /* 展开/收起的过渡动画 */
+}
+
+.aplayer .aplayer-info .aplayer-controller .aplayer-volume-wrap .aplayer-volume-bar-wrap.aplayer-volume-bar-wrap-active {
+  height: 40px                                            /* 拖动音量时保持展开状态 */
+}
+
+.aplayer .aplayer-info .aplayer-controller .aplayer-volume-wrap .aplayer-volume-bar-wrap .aplayer-volume-bar {
+  position: absolute;                                     /* 绝对定位在弹出层内 */
+  bottom: 0;                                              /* 贴底 */
+  right: 10px;                                            /* 水平居中（25px 宽内右移 10px） */
+  width: 5px;                                             /* 竖条宽度 */
+  height: 35px;                                           /* 竖条高度 */
+  background: #aaa;                                       /* 音量条底槽颜色 */
+  border-radius: 2.5px;                                   /* 两端半圆 */
+  overflow: hidden                                        /* 裁出圆角内的填充段 */
+}
+
+.aplayer .aplayer-info .aplayer-controller .aplayer-volume-wrap .aplayer-volume-bar-wrap .aplayer-volume-bar .aplayer-volume {
+  position: absolute;                                     /* 绝对定位，从底部向上填色 */
+  bottom: 0;                                              /* 贴底 */
+  right: 0;                                               /* 贴右 */
+  width: 5px;                                             /* 与底槽同宽 */
+  transition: all .1s ease                                /* 音量变化时的快速过渡（颜色由 JS 按 theme 写入） */
+}
+
+/* ---------- 加载指示器 ---------- */
+
+.aplayer .aplayer-info .aplayer-controller .aplayer-loading-icon {
+  display: none                                           /* 默认隐藏 loading 图标 */
+}
+
+.aplayer .aplayer-info .aplayer-controller .aplayer-loading-icon svg {
+  position: absolute;                                     /* 绝对定位，不占布局 */
+  -webkit-animation: rotate 1s linear infinite;           /* 持续旋转，WebKit */
+  animation: rotate 1s linear infinite                    /* 持续旋转 */
+}
+
+/* ======================= 九、歌词 ======================= */
+
+.aplayer .aplayer-lrc {
+  display: none;                                          /* 默认隐藏，由 withlrc/fixed 状态放出 */
+  position: relative;                                     /* 作为上下渐隐遮罩的定位参照 */
+  height: 30px;                                           /* 歌词可视高度 */
+  text-align: center;                                     /* 歌词居中 */
+  overflow: hidden;                                       /* 裁掉滚动区外的行 */
+  margin: -10px 0 7px                                     /* 负上边距，与信息区衔接 */
+}
+
+.aplayer .aplayer-lrc:before {
+  top: 0;                                                 /* 遮罩贴顶 */
+  height: 10%;                                            /* 顶部渐隐区高度 */
+  background: linear-gradient(180deg, #fff 0, hsla(0, 0%, 100%, 0));   /* 顶部由白到透明的渐隐 */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#00ffffff", GradientType=0)   /* 旧版 IE 渐变兼容写法 */
+}
+
+.aplayer .aplayer-lrc:after,
+.aplayer .aplayer-lrc:before {
+  position: absolute;                                     /* 两个伪元素都绝对定位 */
+  z-index: 1;                                             /* 盖在歌词文字之上 */
+  display: block;                                         /* 块级显示 */
+  overflow: hidden;                                       /* 裁切内容 */
+  width: 100%;                                            /* 撑满宽度 */
+  content: " "                                            /* 空内容占位（必须，否则伪元素不渲染） */
+}
+
+.aplayer .aplayer-lrc:after {
+  bottom: 0;                                              /* 遮罩贴底 */
+  height: 33%;                                            /* 底部渐隐区高度 */
+  background: linear-gradient(180deg, hsla(0, 0%, 100%, 0) 0, hsla(0, 0%, 100%, .8));   /* 底部由透明到白色渐隐 */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#00ffffff", endColorstr="#ccffffff", GradientType=0)   /* 旧版 IE 渐变兼容写法 */
+}
+
+.aplayer .aplayer-lrc p {
+  font-size: 12px;                                        /* 歌词字号 */
+  color: #666;                                            /* 歌词颜色 */
+  line-height: 16px !important;                           /* 行高：与 JS 里的固定滚动步长 16px 对应，必须强制 */
+  height: 16px !important;                                /* 单行高度，必须强制 */
+  padding: 0 !important;                                  /* 清掉内边距，保证行高严格 16px */
+  margin: 0 !important;                                   /* 清掉外边距，同上 */
+  transition: all .5s ease-out;                           /* 透明度变化的过渡 */
+  opacity: .4;                                            /* 非当前行淡化 */
+  overflow: hidden                                        /* 超长行裁切 */
+}
+
+.aplayer .aplayer-lrc p.aplayer-lrc-current {
+  opacity: 1;                                             /* 当前行高亮：完全不透明 */
+  overflow: visible;                                      /* 允许显示完整内容 */
+  height: auto !important;                                /* 取消固定高度 */
+  min-height: 16px                                        /* 最小高度仍为一行 */
+}
+
+.aplayer .aplayer-lrc.aplayer-lrc-hide {
+  display: none                                           /* 用户手动关闭歌词时的隐藏状态 */
+}
+
+.aplayer .aplayer-lrc .aplayer-lrc-contents {
+  width: 100%;                                            /* 撑满宽度 */
+  transition: all .5s ease-out;                           /* 滚动与切换的过渡（位移由 JS 内联 transform 控制） */
+  -webkit-user-select: text;                              /* 歌词允许选中复制，WebKit */
+  -moz-user-select: text;                                 /* 歌词允许选中复制，Firefox */
+  -ms-user-select: text;                                  /* 歌词允许选中复制，IE/Edge */
+  user-select: text;                                      /* 歌词允许选中复制 */
+  cursor: default                                         /* 默认光标 */
+}
+
+/* ======================= 十、播放列表 ======================= */
+
+.aplayer .aplayer-list {
+  overflow: auto;                                         /* 内容超出时滚动（下一行会覆盖为 hidden） */
+  transition: all .5s ease;                               /* 展开/收起的过渡 */
+  will-change: height;                                    /* 提前告知浏览器高度会变，优化动画 */
+  display: none;                                          /* 默认隐藏，由 withlist/fixed 状态放出 */
+  overflow: hidden                                        /* 覆盖上面的 auto：收起动画期间裁切溢出内容 */
+}
+
+.aplayer .aplayer-list.aplayer-list-hide {
+  max-height: 0 !important                                 /* 折叠状态：最大高度归零 */
+}
+
+.aplayer .aplayer-list ol {
+  list-style-type: none;                                  /* 去掉列表序号 */
+  margin: 0;                                              /* 清掉默认外边距 */
+  padding: 0;                                             /* 清掉默认内边距 */
+  overflow-y: auto                                        /* 纵向滚动 */
+}
+
+.aplayer .aplayer-list ol::-webkit-scrollbar {
+  width: 5px                                              /* 滚动条宽度（WebKit） */
+}
+
+.aplayer .aplayer-list ol::-webkit-scrollbar-thumb {
+  border-radius: 3px;                                     /* 滚动条滑块圆角 */
+  background-color: #eee                                  /* 滑块颜色 */
+}
+
+.aplayer .aplayer-list ol::-webkit-scrollbar-thumb:hover {
+  background-color: #ccc                                  /* 滑块悬停颜色 */
+}
+
+.aplayer .aplayer-list ol li {
+  position: relative;                                     /* 作为左侧竖条标记的定位参照 */
+  height: 32px;                                           /* 单行固定高度（JS 用 33px 计算滚动位置） */
+  line-height: 32px;                                      /* 行高等于高度，垂直居中 */
+  padding: 0 15px;                                        /* 左右各 15px */
+  font-size: 12px;                                        /* 列表字号 */
+  border-top: 1px solid #e9e9e9;                          /* 项间分割线 */
+  cursor: pointer;                                        /* 手型光标 */
+  transition: all .2s ease;                               /* 悬停与选中切换的过渡 */
+  overflow: hidden;                                       /* 超长裁切 */
+  margin: 0                                              /* 清掉默认外边距 */
+}
+
+.aplayer .aplayer-list ol li:first-child {
+  border-top: none                                        /* 第一项不画上分割线 */
+}
+
+.aplayer .aplayer-list ol li:hover {
+  background: #efefef                                     /* 鼠标悬停背景 */
+}
+
+.aplayer .aplayer-list ol li.aplayer-list-light {
+  background: #e9e9e9                                     /* 当前播放项背景 */
+}
+
+.aplayer .aplayer-list ol li.aplayer-list-light .aplayer-list-cur {
+  display: inline-block                                   /* 当前播放项左侧竖条标记显示 */
+}
+
+.aplayer .aplayer-list ol li .aplayer-list-cur {
+  display: none;                                          /* 默认隐藏左侧竖条标记 */
+  width: 3px;                                             /* 竖条宽度 */
+  height: 22px;                                           /* 竖条高度 */
+  position: absolute;                                     /* 绝对定位在列表项左侧 */
+  left: 0;                                                /* 贴左 */
+  top: 5px;                                               /* 垂直居中（(32-22)/2） */
+  cursor: pointer                                         /* 手型光标 */
+}
+
+.aplayer .aplayer-list ol li .aplayer-list-index {
+  color: #666;                                            /* 序号颜色 */
+  margin-right: 12px;                                     /* 序号与歌名的间距 */
+  cursor: pointer                                         /* 手型光标 */
+}
+
+.aplayer .aplayer-list ol li .aplayer-list-author {
+  color: #666;                                            /* 作者颜色 */
+  float: right;                                           /* 靠右显示 */
+  cursor: pointer                                         /* 手型光标 */
+}
+
+/* ======================= 十一、提示气泡 ======================= */
+
+.aplayer .aplayer-notice {
+  opacity: 0;                                             /* 默认透明隐藏（由 JS 切换） */
+  position: absolute;                                     /* 绝对定位 */
+  top: 50%;                                               /* 垂直定位起点 */
+  left: 50%;                                              /* 水平定位起点 */
+  -webkit-transform: translate(-50%, -50%);               /* 居中校正，WebKit */
+  transform: translate(-50%, -50%);                       /* 居中校正 */
+  font-size: 12px;                                        /* 文字大小 */
+  border-radius: 4px;                                     /* 圆角 */
+  padding: 5px 10px;                                      /* 内边距 */
+  transition: all .3s ease-in-out;                        /* 淡入淡出 */
+  overflow: hidden;                                       /* 裁切溢出内容 */
+  color: #fff;                                            /* 文字颜色（随后被下面的 #909399 覆盖，原样保留） */
+  pointer-events: none;                                   /* 不拦截鼠标事件 */
+  background-color: #f4f4f5;                              /* 气泡背景色 */
+  color: #909399                                          /* 文字颜色：实际生效值为 #909399 */
+}
+
+/* ======================= 十二、迷你模式切换条 ======================= */
+
+.aplayer .aplayer-miniswitcher {
+  display: none;                                          /* 默认隐藏，仅 fixed 模式显示 */
+  position: absolute;                                     /* 绝对定位在右侧 */
+  top: 0;                                                 /* 贴顶 */
+  right: 0;                                               /* 贴右 */
+  bottom: 0;                                              /* 贴底，撑满高度 */
+  height: 100%;                                           /* 高度 100% */
+  background: #e6e6e6;                                    /* 切换条底色 */
+  width: 18px;                                            /* 宽度 */
+  border-radius: 0 2px 2px 0                              /* 仅右侧两角圆角 */
+}
+
+.aplayer .aplayer-miniswitcher .aplayer-icon {
+  height: 100%;                                           /* 撑满切换条高度 */
+  width: 100%;                                            /* 撑满切换条宽度 */
+  -webkit-transform: rotateY(180deg);                     /* 箭头水平翻转，WebKit */
+  transform: rotateY(180deg);                             /* 箭头水平翻转 */
+  transition: all .3s ease                                /* 翻转过渡 */
+}
+
+.aplayer .aplayer-miniswitcher .aplayer-icon path {
+  fill: #666                                              /* 箭头颜色 */
+}
+
+.aplayer .aplayer-miniswitcher .aplayer-icon:hover path {
+  fill: #000                                              /* 箭头悬停颜色 */
+}
+
+/* ======================= 十三、动画关键帧 ======================= */
+
+@-webkit-keyframes aplayer-roll {
+  0% {
+    left: 0                                               /* 起点在最左 */
+  }
+
+  to {
+    left: -100%                                           /* 终点移出左侧一整屏，用于歌名横向滚动 */
+  }
+}
+
+@keyframes aplayer-roll {
+  0% {
+    left: 0                                               /* 起点在最左 */
+  }
+
+  to {
+    left: -100%                                           /* 终点移出左侧一整屏 */
+  }
+}
+
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0);                         /* 起始角度 0°，WebKit */
+    transform: rotate(0)
+  }
+
+  to {
+    -webkit-transform: rotate(1turn);                     /* 转满一圈，WebKit */
+    transform: rotate(1turn)
+  }
+}
+
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0);                         /* 起始角度 0° */
+    transform: rotate(0)
+  }
+
+  to {
+    -webkit-transform: rotate(1turn);                     /* 转满一圈，用于 loading 图标 */
+    transform: rotate(1turn)
+  }
+}
 
 /*# sourceMappingURL=APlayer.min.css.map*/
